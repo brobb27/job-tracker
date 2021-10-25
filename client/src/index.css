@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 #app {
@@ -38,7 +39,8 @@
 }
 
 #navbarTitle {
-	all: unset;
+	text-decoration: none;
+	color: #f9f7f7;
 	font-size: 1.8rem;
 	transition-duration: 0.5s;
 	letter-spacing: 0.18rem;
@@ -315,4 +317,26 @@
 
 #icons > div > a:hover {
 	cursor: pointer;
+}
+
+@media only screen and (max-width: 760px) {
+	/* navbar query */
+	#navbar {
+		display: flex;
+		flex-direction: column;
+		padding: 0.5rem 0rem;
+	}
+
+	#navbarTitle {
+		padding-left: 0rem;
+		padding-bottom: 0.5rem;
+	}
+
+	#navbarLinks {
+		min-width: 13rem;
+	}
+
+	.navbarLink {
+		min-width: 4rem;
+	}
 }
