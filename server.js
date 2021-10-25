@@ -4,9 +4,13 @@ const app = express()
 const morgan = require('morgan')
 const cors = require('cors')
 const mongoose = require('mongoose')
+require('dotenv').config()
 
 // port
 const PORT = process.env.PORT || 7000
+
+//mongoDB atlas
+const MONGODB_URI = 'mongodb+srv://brobb27:RickNMorty13@job-tracker-br.bznox.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
 // Middleware
 app.use(express.json()) // looks for a request body
