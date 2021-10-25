@@ -4,7 +4,6 @@ const app = express()
 const morgan = require('morgan')
 const cors = require('cors')
 const mongoose = require('mongoose')
-// require('dotenv').config()
 
 // port
 const PORT = process.env.PORT || 7000
