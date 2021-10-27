@@ -248,6 +248,7 @@
 
 .jobInfo > h2 {
 	font-size: 1.3rem;
+	overflow-x: unset;
 }
 
 .jobInfo > h3 {
@@ -338,5 +339,23 @@
 
 	.navbarLink {
 		min-width: 4rem;
+	}
+
+	#jobList {
+		width: 30rem;
+		grid-template-columns: 15rem 15rem;
+	}
+
+	.editForm > * {
+		width: 10rem;
+	}
+
+	.editForm > select {
+		width: 10.5rem;
+	}
+
+	#formCheck {
+		height: 2.5rem;
+		overflow-x: unset;
 	}
 }
